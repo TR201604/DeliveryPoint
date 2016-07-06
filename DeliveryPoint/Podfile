@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "9.0"
+
+target "DeliveryPoint" do
+pod 'SDWebImage','3.7.6'
+pod 'DKNightVersion','2.3.1'
+
+end
+

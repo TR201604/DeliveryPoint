@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  DeliveryPoint
+//
+//  Created by kaki on 16/7/4.
+//  Copyright © 2016年 liudhkk. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "KKConst.h"
+#import "KKFont.h"
+#import "KKImageColor.h"
+#import "UIColor+KKExtension.h"
+#import "UIFont+KKExtension.h"
+
+
+// 主框架宏定义
+#define KKMainStream @"mainStream"
+
+
+// 沙盒里Image与color 对应的key
+#define KKDayOrNightSettingKey @"DeliveryPointImageColorSettingKey"
+// 沙盒里font 对应的key
+#define KKFontKey @"DeliveryPointFontSettingKey"
+
+// 设置颜色
+#define KKRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 全局白天day颜色
+#define KKGlobalbgColor KKRGBColor(223, 223, 223)
+
+#ifdef DEBUG
+#define KKLog(...) NSLog(__VA_ARGS__)
+#else
+#define KKLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>day</key>
+	<dict>
+		<key>mainStream</key>
+		<dict>
+			<key>tabBar</key>
+			<dict>
+				<key>tintColor</key>
+				<string>255,0,0,1</string>
+				<key>tabBarbgColor</key>
+				<string>238,238,238,1.0</string>
+				<key>homePageItemImage</key>
+				<string>tabBar_home_icon</string>
+				<key>homePageItemImageClick</key>
+				<string>tabBar_home_click_icon</string>
+				<key>disconverItemImage</key>
+				<string>tabBar_discover</string>
+				<key>disconverItemImageClick</key>
+				<string>tabBar_discover_click</string>
+				<key>meItemImage</key>
+				<string>tabBar_me_icon</string>
+				<key>meItemImageClick</key>
+				<string>tabBar_me_click_icon</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>night</key>
+	<dict>
+		<key>mainStream</key>
+		<dict>
+			<key>tabBar</key>
+			<dict>
+				<key>tintColor</key>
+				<string>255,0,0,1</string>
+				<key>tabBarbgColor</key>
+				<string>0,220,0,1.0</string>
+				<key>homePageItemImage</key>
+				<string>tabBar_home_icon</string>
+				<key>homePageItemImageClick</key>
+				<string>tabBar_home_click_icon</string>
+				<key>disconverItemImage</key>
+				<string>tabBar_discover</string>
+				<key>disconverItemImageClick</key>
+				<string>tabBar_discover_click</string>
+				<key>meItemImage</key>
+				<string>tabBar_me_icon</string>
+				<key>meItemImageClick</key>
+				<string>tabBar_me_click_icon</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
