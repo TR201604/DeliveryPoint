@@ -10,14 +10,13 @@
 
 @interface KKFont : NSObject
 /** 字体大小标识 **/
-@property (nonatomic, assign, readonly) KKFontSize fontType;
-/** 所有字体字典 **/
-@property (nonatomic, strong, readonly) NSDictionary *fontDict;
+@property (nonatomic, assign) KKFontSize fontType;
+/** 当前字体 **/
+@property (nonatomic, strong) NSDictionary *currentFonts;
 
 /** 单例 **/
 /** 返回Font.plist文件小或中或大字体的字典 **/
+
 + (instancetype)shareFont;
 
-/** 修改沙盒的白天夜晚标识 **/
-- (void)resetFont:(KKFontSize)fontType;
 @end

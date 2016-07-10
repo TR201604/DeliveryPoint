@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DKNightVersion.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDAutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0171134A66A6F2439C9A803963670745</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>063EFE0E3621571DD24F865FA8C91F15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>633D872DB68AAEA4D3273A8DDE4A1CC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5B038FAC02DCAA6D4A99190D3249E9A</key>
+		<key>7BFE2EF92AE34347975E203B596BD6B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D762AC19F48C1D6A8A4A6E72EBA3E88B</key>
+		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9643ED01450BDE836E38E36609F548B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

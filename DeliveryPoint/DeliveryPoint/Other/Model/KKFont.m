@@ -13,11 +13,7 @@
 @property (nonatomic, strong) NSDictionary *allFonts;
 @end
 
-@implementation KKFont {
-    // readonly对象重写get方法，需自己添加变量
-    NSDictionary *_fontDict;
-    KKFontSize _fontType;
-}
+@implementation KKFont
 
 - (NSDictionary *)allFonts {
     if(_allFonts == nil) {
@@ -26,49 +22,38 @@
     return _allFonts;
 }
 
-- (KKFontSize)fontType {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSString *flag = [[NSUserDefaults standardUserDefaults] stringForKey:KKFontKey];
-        if (flag.length == 0) {
-            [self resetFont:[flag boolValue]];
-        } else {
-            _fontType = [flag boolValue];
-        }
-    });
+- (NSDictionary *)currentFonts {
+    KKFontSize type = self.fontType;
     
-    return _fontType;
-}
-
-- (NSDictionary *)fontDict {
-    if (self.fontType == KKFontSizeMin) {
-        _fontDict = self.allFonts[@"min"];
-    } else if (self.fontType == KKFontSizeMiddle) {
-        _fontDict = self.allFonts[@"middle"];
+    if (type == KKFontSizeMin) {
+        return self.allFonts[@"min"];
+    } else if (type == KKFontSizeMiddle) {
+        return self.allFonts[@"middle"];
     } else {
-        _fontDict = self.allFonts[@"max"];
+        return self.allFonts[@"max"];
     }
-    
-    return _fontDict;
 }
 
 + (instancetype)shareFont {
     static KKFont *fontObj = nil;
+    static dispatch_once_t onceToken;
     if (fontObj == nil) {
-        fontObj = [[KKFont alloc] init];
+        dispatch_once(&onceToken, ^{
+            fontObj = [[KKFont alloc] init];
+            fontObj.fontType = (KKFontSize)[[NSUserDefaults standardUserDefaults] integerForKey:KKFontKey];
+        });
     }
     
     return fontObj;
 }
 
-- (void)resetFont:(KKFontSize)fontType {
-    
-    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%zd", fontType] forKey:KKFontKey];
-    _fontType = fontType;
-    //    [self fontDict];
+- (void)setFontType:(KKFontSize)fontType {
+    @synchronized (self) {
+        _fontType = fontType;
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:fontType] forKey:KKFontKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
 }
-
-
 
 
 @end

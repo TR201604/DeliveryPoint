@@ -7,6 +7,7 @@
 //
 
 #import "KKDiscoveryViewController.h"
+#import <DKNightVersion.h>
 
 @interface KKDiscoveryViewController ()
 
@@ -17,12 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = KKGlobalbgColor;
+    self.view.dk_backgroundColorPicker = KKColorWithRootkeyColorKey(@"discover", @"viewBgColorDefault");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"%s", __func__);
 }
 
 /*

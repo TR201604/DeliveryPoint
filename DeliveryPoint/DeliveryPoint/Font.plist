@@ -4,42 +4,24 @@
 <dict>
 	<key>min</key>
 	<dict>
-		<key>mainStream</key>
-		<dict>
-			<key>tabBar</key>
-			<dict>
-				<key>barItem</key>
-				<string>12</string>
-				<key>barItemSel</key>
-				<string>12</string>
-			</dict>
-		</dict>
+		<key>cell_labelText</key>
+		<integer>14</integer>
+		<key>cell_detailLabel</key>
+		<integer>13</integer>
 	</dict>
 	<key>middle</key>
 	<dict>
-		<key>mainStream</key>
-		<dict>
-			<key>tabBar</key>
-			<dict>
-				<key>barItem</key>
-				<string>12</string>
-				<key>barItemSel</key>
-				<string>12</string>
-			</dict>
-		</dict>
+		<key>cell_labelText</key>
+		<integer>15</integer>
+		<key>cell_detailLabel</key>
+		<integer>14</integer>
 	</dict>
 	<key>max</key>
 	<dict>
-		<key>mainStream</key>
-		<dict>
-			<key>tabBar</key>
-			<dict>
-				<key>barItem</key>
-				<string>12</string>
-				<key>barItemSel</key>
-				<string>12</string>
-			</dict>
-		</dict>
+		<key>cell_labelText</key>
+		<integer>16</integer>
+		<key>cell_detailLabel</key>
+		<integer>15</integer>
 	</dict>
 </dict>
 </plist>
